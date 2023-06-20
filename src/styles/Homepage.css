@@ -1,0 +1,88 @@
+.home--container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.home--ad-image {
+  position: relative;
+  display: inline-block;
+  background-image: url("../assets/images/homepage/hugoDoria.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150vh;
+}
+
+.home--text-overlay {
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 1px;
+}
+
+.home--text-overlay h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.home--button {
+  font-style: normal;
+  text-decoration: none;
+  color: var(--darkShades);
+  font-weight: bold;
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--main);
+  transition: padding 0.3s ease;
+}
+
+.home--button:hover {
+  padding-inline: 3.5rem;
+  background-color: var(--darkShades);
+  color: var(--lightShades);
+}
+
+.home--sheep-container {
+  background-color: var(--lightShades);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150vh;
+}
+
+.home--sheep-pic-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
+.home--sheep-pic-container :nth-child(1) {
+  grid-row: 1/3;
+  height: 100vh;
+  border-right: var(--darkShades) dotted;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.home--sheep-pic-container :nth-child(2) {
+  height: 50vh;
+  width: 100%;
+  border-top-right-radius: 1rem;
+  border-bottom: var(--darkShades) dotted;
+}
+
+.home--sheep-pic-container :nth-child(3) {
+  height: 50vh;
+  width: 100%;
+  border-bottom-right-radius: 1rem;
+}
+
+.home--sheep-description {
+  font-size: 4rem;
+}

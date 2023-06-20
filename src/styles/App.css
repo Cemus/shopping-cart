@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Ysabeau", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --lightShades: #fbfbfc;
+  --lightAccent: #819db0;
+  --main: #edb537;
+  --darkAccent: #349caf;
+  --darkShades: #3b0b25;
+}
+
+body {
+  background-color: var(--lightShades);
+  color: var(--darkShades);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.upper-header {
+  width: 100%;
+  background-color: var(--main);
+  text-align: center;
+  justify-content: center;
+  padding: 1rem;
+  color: var(--darkShades);
+}
+
+.mid-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  align-content: center;
+  justify-items: center;
+  padding-inline: 1rem;
+}
+
+.mid-header a {
+  align-self: center;
+}
+
+.logo {
+  width: 20vh;
+}
+
+.lower-header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  align-content: center;
+  justify-items: center;
+  padding-inline: 1rem;
+  margin-block: 2rem;
+}
+
+.nav-items {
+  position: relative;
+  text-decoration: none;
+  color: var(--darkShades);
+  padding: 0.5rem;
+}
+
+.nav-items::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: var(--darkAccent);
+  opacity: 0;
+  transition: ease, width 0.5s ease, opacity 0.2s ease;
+}
+
+.nav-items:hover::after {
+  opacity: 0.3;
+}
