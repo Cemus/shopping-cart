@@ -16,8 +16,14 @@ function App() {
     const chosenMessage = messages[Math.floor(Math.random() * messages.length)];
     return chosenMessage;
   };
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
   return (
-    <>
+    <div className="global-container">
       <header>
         <div className="upper-header">
           <p>{messageRemise()}</p>
@@ -50,7 +56,11 @@ function App() {
         <Route path="/collection" element={<Collection />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
       </Routes>
-    </>
+
+      <button onClick={scrollToTop} className="back-top" type="button">
+        Back to top
+      </button>
+    </div>
   );
 }
 

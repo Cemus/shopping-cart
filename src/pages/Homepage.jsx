@@ -6,6 +6,7 @@ import img2 from "../assets/images/homepage/sheep.jpg";
 import img3 from "../assets/images/homepage/sheeps.jpg";
 import img4 from "../assets/images/homepage/sheepz.jpg";
 import img5 from "../assets/images/homepage/fun.jpg";
+import img6 from "../assets/images/homepage/ingoDoerrie.jpg";
 
 export default function HomePage() {
   return (
@@ -22,12 +23,22 @@ export default function HomePage() {
         </div>
       </div>
       <div className="home--sheep-container">
+        <p className="home--sheep-description">
+          Embrace the warmth and comfort of genuine sheep wool articles for an
+          authentic beach experience...
+        </p>
         <div className="home--sheep-pic-container">
-          <img className="home--image-sheep" src={img3} />
-          <img className="home--image-sheep" src={img2} />
-          <img className="home--image-sheep" src={img4} />
+          <img loading="lazy" className="home--image-sheep" src={img3} />
+          <img loading="lazy" className="home--image-sheep" src={img2} />
+          <img loading="lazy" className="home--image-sheep" src={img4} />
         </div>
-        <p className="home--sheep-description">De la maroquinerie classe</p>
+      </div>
+      <div className="home--van-container">
+        <p className="home--van-description">
+          ...bringing natural insulation and cozy luxury to your seaside
+          adventures.
+        </p>
+        <img loading="lazy" className="home--van" src={img6} />
       </div>
     </div>
   );

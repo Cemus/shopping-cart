@@ -21,6 +21,11 @@ body {
   background-color: var(--lightShades);
   color: var(--darkShades);
 }
+.global-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 header {
   display: flex;
@@ -71,6 +76,7 @@ header {
   text-decoration: none;
   color: var(--darkShades);
   padding: 0.5rem;
+  transition: letter-spacing 1s ease;
 }
 
 .nav-items::after {
@@ -84,9 +90,33 @@ header {
   border-bottom-right-radius: 1rem;
   background-color: var(--darkAccent);
   opacity: 0;
-  transition: ease, width 0.5s ease, opacity 0.2s ease;
+  transition: width 0.5s ease, opacity 0.2s ease;
 }
 
 .nav-items:hover::after {
   opacity: 0.3;
+}
+
+.nav-items:hover {
+  letter-spacing: 0.1rem;
+}
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  background-color: black;
+  text-align: center;
+  color: var(--lightShades);
+}
+
+.back-top {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--darkShades);
+  text-align: center;
+  color: var(--lightShades);
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  margin-top: auto;
 }
