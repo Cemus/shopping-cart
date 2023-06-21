@@ -2,9 +2,12 @@ import { useState } from "react";
 import "./styles/App.css";
 import { Route, Routes, Link } from "react-router-dom";
 import Homepage from "./pages/Homepage";
-import Collection from "./pages/Collection";
+import Beachwear from "./pages/Beachwear";
 import Cart from "./pages/Cart";
 import logo from "./assets/images/logo/logo.png";
+import Jewelry from "./pages/Jewelry";
+import Essentials from "./pages/Essentials";
+import Toys from "./pages/Toys";
 
 function App() {
   const messageRemise = () => {
@@ -37,23 +40,29 @@ function App() {
         </div>
 
         <div className="lower-header">
+          <Link className="nav-items" to="/">
+            HOME
+          </Link>
+          <Link className="nav-items" to="/beachwear">
+            BEACHWEAR
+          </Link>
+          <Link className="nav-items" to="/jewelry">
+            JEWELRY
+          </Link>
+          <Link className="nav-items" to="/essentials">
+            ESSENTIALS
+          </Link>
           <Link className="nav-items" to="/toys">
             TOYS
-          </Link>
-          <Link className="nav-items" to="/clothes">
-            CLOTHES
-          </Link>
-          <Link className="nav-items" to="/equipments">
-            EQUIPMENT
-          </Link>
-          <Link className="nav-items" to="/accessories">
-            ACCESSORIES
           </Link>
         </div>
       </header>
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
-        <Route path="/collection" element={<Collection />}></Route>
+        <Route path="/beachwear" element={<Beachwear />}></Route>
+        <Route path="/jewelry" element={<Jewelry />}></Route>
+        <Route path="/essentials" element={<Essentials />}></Route>
+        <Route path="/toys" element={<Toys />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
       </Routes>
 
