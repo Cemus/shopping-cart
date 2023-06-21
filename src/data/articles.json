@@ -1,0 +1,100 @@
+{
+  "0": {
+    "id": 0,
+    "name": "Beach Umbrella",
+    "price": "49,99",
+    "description": "A beach umbrella to protect you from the sun during your sunny days by the water.",
+    "image": "beach_umbrella"
+  },
+  "1": {
+    "id": 1,
+    "name": "Designer Beach Chair",
+    "price": "149,99",
+    "description": "A designer beach chair that combines comfort and aesthetics, allowing you to relax in style.",
+    "image": "chair"
+  },
+  "2": {
+    "id": 2,
+    "name": "Standard Cooler",
+    "price": "29,99",
+    "description": "A standard cooler to keep your drinks chilled and snacks handy during your beach outings.",
+    "image": "ice_box"
+  },
+  "3": {
+    "id": 3,
+    "name": "Standard Jewelry",
+    "price": "49,99",
+    "description": "A standard piece of jewelry that adds a touch of elegance to your beach attire.",
+    "image": "jewel_0"
+  },
+  "4": {
+    "id": 4,
+    "name": "Woolen Beach Ball",
+    "price": "9,99",
+    "description": "Colorful woolen beach ball for fun and games on the shore.",
+    "image": "ball"
+  },
+  "5": {
+    "id": 5,
+    "name": "Small Beach Bucket",
+    "price": "4,99",
+    "description": "A small beach bucket perfect for building sandcastles and collecting seashells.",
+    "image": "bucket"
+  },
+  "6": {
+    "id": 6,
+    "name": "Expensive Jewelry",
+    "price": "500",
+    "description": "An exquisite piece of jewelry adorned with precious gemstones, representing luxury and opulence.",
+    "image": "jewel_1"
+  },
+  "7": {
+    "id": 7,
+    "name": "Very Expensive Jewelry",
+    "price": "7599",
+    "description": "An exceptional piece of jewelry featuring rare gemstones and exquisite craftsmanship, representing the epitome of luxury.",
+    "image": "jewel_2"
+  },
+  "8": {
+    "id": 8,
+    "name": "Designer Water Gun",
+    "price": "19,99",
+    "description": "A sleek and innovative designer water gun for exciting water battles and summer adventures.",
+    "image": "tactical_weaponry"
+  },
+  "9": {
+    "id": 9,
+    "name": "High-End Water Gun",
+    "price": "54,79",
+    "description": "A high-end water gun engineered for power and precision, ensuring an exciting water fight experience.",
+    "image": "water_blaster"
+  },
+  "10": {
+    "id": 10,
+    "name": "Assorted Toy Set",
+    "price": "34,50",
+    "description": "An assortment of beach-friendly toys for endless fun in the sun.",
+    "image": "toys"
+  },
+  "11": {
+    "id": 11,
+    "name": "Giant Woolen Plush Ball",
+    "price": "99,99",
+    "description": "An oversized woolen plush ball in the shape of a child, providing a huggable playtime experience.",
+    "image": "sheepy_bear"
+  },
+  "12": {
+    "id": 12,
+    "name": "Woolen Bikini",
+    "price": "59,99",
+    "description": "A trendy woolen bikini made from high-quality wool blend fabric, combining style and comfort.",
+    "image": "wool_bikini"
+  },
+  "13": {
+    "id": 13,
+    "name": "Woolen Swim Briefs",
+    "price": "32.50",
+    "description": "Cozy and fashionable woolen swim briefs, offering a unique twist to traditional swimwear.",
+    "image": "wool_briefs2"
+  }
+}
