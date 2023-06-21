@@ -1,6 +1,6 @@
 export default function generateArticle(array, Component) {
   return (
-    <div>
+    <>
       {array.map((item) => (
         <Component
           key={item.id}
@@ -10,6 +10,6 @@ export default function generateArticle(array, Component) {
           image={item.image}
         />
       ))}
-    </div>
+    </>
   );
 }

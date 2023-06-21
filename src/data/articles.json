@@ -92,7 +92,7 @@
       "id": 11,
       "name": "Giant Woolen Plush Ball",
       "price": "99,99",
-      "description": "An oversized woolen plush ball in the shape of a child, providing a huggable playtime experience.",
+      "description": "An oversized woolen plush ball in the shape of a sheep, providing a huggable playtime experience.",
       "category": "toys",
       "image": "sheepy_bear"
     },
@@ -123,7 +123,7 @@
     "15": {
       "id": 15,
       "name": "Luxurious Wool Designer Beachwear Outfit",
-      "price": "349,99",
+      "price": "3579,00",
       "description": "A high-end beachwear outfit made from premium quality wool. This outfit is designed by a renowned designer, offering the perfect blend of elegance and comfort. With meticulous details and impeccable craftsmanship, this outfit is the ultimate choice for those seeking luxury and style on the beach.",
       "category": "clothes",
       "image": "design_suit"

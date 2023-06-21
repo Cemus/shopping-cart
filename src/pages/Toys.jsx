@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Article from "../components/Article";
 import articles from "../data/articles.json";
 import generateArticle from "../utils/generateArticle";
+import "../styles/Collection.css";
 
 export default function Toys() {
   const articlesArray = Object.values(articles[0]);
@@ -13,7 +14,9 @@ export default function Toys() {
   return (
     <>
       <h1>Toys</h1>
-      {generateArticle(toysList, Article)}
+      <div className="collection--container">
+        {generateArticle(toysList, Article)}
+      </div>
     </>
   );
 }
