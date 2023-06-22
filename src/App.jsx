@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./styles/App.css";
 import { Route, Routes, Link } from "react-router-dom";
 import gitHubLogo from "./assets/images/logo/github.svg";
@@ -13,7 +13,7 @@ import Toys from "./pages/Toys";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
-
+  const [chosenMessage, setChosenMessage] = useState("");
   const addToCart = (item) => {
     setCartItems((prevItems) => [...prevItems, item]);
   };
@@ -29,15 +29,15 @@ function App() {
     const updatedCartItems = cartItems.filter((item) => item.id !== id);
     setCartItems(updatedCartItems);
   };
-  const messageRemise = () => {
+  useEffect(() => {
     const messages = [
-      `Profitez des offres "Oulala!" et obtenez 20% de remise sur vos produits préférés !`,
-      `Du nouveau en stock !`,
-      `N'oubliez pas la crème solaire !`,
+      `Sun, Sand, and Savings! Enjoy up to 50% off on your dream beach getaway!`,
+      `Summer Splendor Sale: Dive into savings with discounts up to 40% on beachfront escapes!`,
+      `Paradise Awaits: Book now and save up to 35% on your next beach vacation!`,
     ];
-    const chosenMessage = messages[Math.floor(Math.random() * messages.length)];
-    return chosenMessage;
-  };
+    setChosenMessage(messages[Math.floor(Math.random() * messages.length)]);
+  }, []);
+
   function scrollToTop() {
     window.scrollTo({
       top: 0,
@@ -48,7 +48,7 @@ function App() {
     <div className="global-container">
       <header>
         <div className="upper-header">
-          <p>{messageRemise()}</p>
+          <p>{chosenMessage}</p>
         </div>
         <div className="mid-header">
           <a className="logo" href="https://github.com/Cemus">
