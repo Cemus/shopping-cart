@@ -4,7 +4,12 @@ import articles from "../data/articles.json";
 import generateArticle from "../utils/generateArticle";
 import "../styles/Collection.css";
 
-export default function Toys() {
+export default function Toys({
+  addToCart,
+  cartItems,
+  removeFromCart,
+  subFromCart,
+}) {
   const articlesArray = Object.values(articles[0]);
   const toysList = articlesArray.filter(
     (article) => article.category === "toys"
@@ -13,9 +18,18 @@ export default function Toys() {
   console.log(toysList);
   return (
     <>
-      <h1>Toys</h1>
+      <h1 className="page-title">Toys</h1>
       <div className="collection--container">
-        {generateArticle(toysList, Article)}
+        {generateArticle(toysList, (props) => (
+          <Article
+            {...props}
+            cartItems={cartItems}
+            isCart={false}
+            addToCart={addToCart}
+            removeFromCart={removeFromCart}
+            subFromCart={subFromCart}
+          />
+        ))}
       </div>
     </>
   );

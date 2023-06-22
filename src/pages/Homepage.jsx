@@ -27,9 +27,24 @@ export default function HomePage() {
         </p>
         <Link to="/beachwear">
           <div className="home--sheep-pic-container">
-            <img loading="lazy" className="home--image-sheep" src={img3} />
-            <img loading="lazy" className="home--image-sheep" src={img2} />
-            <img loading="lazy" className="home--image-sheep" src={img4} />
+            <img
+              loading="lazy"
+              className="home--image-sheep"
+              src={img3}
+              alt="sheep manufactured"
+            />
+            <img
+              loading="lazy"
+              className="home--image-sheep"
+              src={img2}
+              alt="sheep manufactured"
+            />
+            <img
+              loading="lazy"
+              className="home--image-sheep"
+              src={img4}
+              alt="sheep manufactured"
+            />
           </div>
         </Link>
       </div>
@@ -38,7 +53,12 @@ export default function HomePage() {
           ...bringing natural insulation and cozy luxury to your seaside
           adventures.
         </p>
-        <img loading="lazy" className="home--van" src={img6} />
+        <img
+          loading="lazy"
+          className="home--van"
+          src={img6}
+          alt="travel invitation"
+        />
       </div>
     </div>
   );

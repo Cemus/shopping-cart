@@ -24,13 +24,37 @@
   font-weight: bold;
   border: solid var(--lightShades);
   transition: color 0.2s ease, width 0.2s ease, background-color 0.2s ease,
-    border-color 0.5s ease-in-out;
+    border-color 0.2s ease-in-out;
 }
 
-.article--buy:hover {
+.article--sub,
+.article--add {
+  border-radius: 1rem;
+  background-color: var(--main);
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  border: solid var(--lightShades);
+  transition: color 0.2s ease, width 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease-in-out;
+}
+
+.article--remove {
+  border-radius: 1rem;
+  background-color: var(--lightAccent);
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--darkShades);
+  border: solid var(--lightShades);
+  transition: color 0.2s ease, width 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease-in-out;
+}
+
+.article-buttons-container:has(button) > :hover {
   cursor: pointer;
   background-color: var(--darkAccent);
   color: var(--lightShades);
   border-radius: 1rem;
-  border-color: var(--darkShades);
+  border-color: var(--lightAccent);
 }
