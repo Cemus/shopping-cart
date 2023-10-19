@@ -75,8 +75,7 @@
 
 .home--sheep-pic-container :nth-child(1) {
   grid-row: 1/3;
-  height: 90vh;
-  width: 100%;
+  max-width: 100%;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
@@ -126,4 +125,34 @@
 
 .home--van {
   width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .home--sheep-container {
+    background-color: var(--lightShades);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+  }
+  .home--sheep-pic-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .home--sheep-pic-container :nth-child(1) {
+    max-width: 90%;
+  }
+  .home--sheep-pic-container:hover :nth-child(1) {
+    transform: none;
+  }
+  .home--sheep-pic-container:hover :nth-child(3) {
+    transform: none;
+  }
+  .home--sheep-pic-container:hover :nth-child(2) {
+    transform: none;
+  }
 }

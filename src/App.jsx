@@ -38,7 +38,8 @@ function App() {
     setChosenMessage(messages[Math.floor(Math.random() * messages.length)]);
   }, []);
 
-  function scrollToTop() {
+  function scrollToTop(e) {
+    e.preventDefault();
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -141,9 +142,11 @@ function App() {
         ></Route>
       </Routes>
 
-      <button onClick={scrollToTop} className="back-top" type="button">
-        Back to top
-      </button>
+      <footer>
+        <a href="/" onClick={(e) => scrollToTop(e)} className="back-top">
+          Back to top
+        </a>
+      </footer>
     </div>
   );
 }

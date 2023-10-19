@@ -131,18 +131,6 @@ footer {
   color: var(--lightShades);
 }
 
-.back-top {
-  width: 100%;
-  padding: 1rem;
-  background-color: var(--darkShades);
-  text-align: center;
-  color: var(--lightShades);
-  cursor: pointer;
-  border: none;
-  font-size: 1rem;
-  margin-top: auto;
-}
-
 .page-title {
   overflow: hidden;
   text-align: center;
@@ -170,4 +158,55 @@ footer {
 .page-title:after {
   left: 0.5em;
   margin-right: -50%;
+}
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--main);
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+.back-top {
+  color: var(--darkShades);
+  font-weight: bolder;
+  font-size: large;
+  transition: all 1s;
+  border: solid 1px;
+  padding: 1vh;
+  border-radius: 0.5rem;
+  border-top: none;
+  border-bottom: none;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+.back-top:hover {
+  letter-spacing: 0.5rem;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 667px) {
+  .cart-number-items {
+    left: 0.1rem;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    font-size: 1rem;
+    color: var(--lightShades);
+  }
 }

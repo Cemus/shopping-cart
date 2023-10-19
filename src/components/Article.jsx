@@ -60,7 +60,7 @@ export default function Article({
         <img className="article--image" src={getUrl(image, "jpg")} alt={name} />
         <div className="article--informations">
           <h3 className="article--name">
-            {name} <span>{`(x ${occurenceItem(id)})`}</span>
+            {name} <span>{`(x${occurenceItem(id)})`}</span>
           </h3>
           <p className="article--description">{description}</p>
           <h4 className="article--price">{`${price} $`}</h4>
